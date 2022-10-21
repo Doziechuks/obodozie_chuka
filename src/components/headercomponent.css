@@ -1,0 +1,46 @@
+.header-component-wrapper{
+  border: 1px red solid;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.header-title{
+  /* border: 1px red solid; */
+  width: 100%;
+  max-width: 40em;
+}
+.header-title h1 {
+  color: #fff;
+  font-size: 2.5rem;
+  text-transform: capitalize;
+  font-weight: 1000;
+}
+.header-title p {
+  color: rgb(206,216,245);;
+  font-size: 2rem;
+  font-weight: 500;
+}
+.my-image-box{
+  /* border: 1px red solid; */
+  width: 100%;
+  max-width: 30em;
+}
+.my-image{
+  width: 100%;
+  display: block;
+}
+.resume{
+  padding: 0.8em 1em;
+  background-color: #f6b93a;
+  color: black;
+  display: block;
+  width: 100%;
+  max-width: 12em;
+  margin-top: 2em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10em;
+  text-transform: capitalize;
+}
