@@ -1,11 +1,13 @@
-.header-component-wrapper{
+.header-component-wrapper {
   border: 1px red solid;
   width: 100%;
   display: flex;
+  /* flex-direction: column; */
   align-items: center;
   justify-content: center;
+  gap: 2em;
 }
-.header-title{
+.header-title {
   /* border: 1px red solid; */
   width: 100%;
   max-width: 40em;
@@ -17,20 +19,20 @@
   font-weight: 1000;
 }
 .header-title p {
-  color: rgb(206,216,245);;
+  color: rgb(206, 216, 245);
   font-size: 2rem;
   font-weight: 500;
 }
-.my-image-box{
+.my-image-box {
   /* border: 1px red solid; */
   width: 100%;
   max-width: 30em;
 }
-.my-image{
+.my-image {
   width: 100%;
   display: block;
 }
-.resume{
+.resume {
   padding: 0.8em 1em;
   background-color: #f6b93a;
   color: black;
@@ -43,4 +45,39 @@
   justify-content: center;
   border-radius: 10em;
   text-transform: capitalize;
+}
+
+@media screen and (max-width: 1000px) {
+  .header-component-wrapper {
+    gap: 0;
+  }
+  .header-title {
+    padding-left: 1em;
+  }
+  .header-title h1 {
+    font-size: 1.5rem;
+  }
+  .header-title p {
+    font-size: 1.2rem;
+  }
+  .my-image-box {
+    max-width: 18em;
+  }
+}
+@media screen and (max-width: 650px) {
+  .header-component-wrapper {
+    flex-direction: column-reverse;
+    margin-bottom: 1.5em;
+  }
+  .header-title {
+    padding: 0 1em;
+    text-align: center;
+  }
+  .my-image-box{
+    margin-bottom: 1em;
+  }
+  .resume{
+    margin: 0 auto;
+    margin-top: 1.5em;
+  }
 }

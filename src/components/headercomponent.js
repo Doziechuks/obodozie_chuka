@@ -14,7 +14,7 @@ const HeaderComponent = () => {
         </a>
       </div>
       <div className="my-image-box">
-        <img className="my-image" src="./images/chuka1.png" alt="chuka" />
+        <img className="my-image" src="./images/chukacc.png" alt="chuka" />
       </div>
 
       {/* <div className="header-wrapper">

@@ -28,4 +28,10 @@ body{
   background: linear-gradient( to top right, #1548b5, #17347a, #3d959f, #2062b8 );
    overflow: hidden;
 }
+@media screen and (max-width: 1000px) {
+  body{
+    padding: 1.5em;
+    padding-bottom: 0;
+  }
+}
 
