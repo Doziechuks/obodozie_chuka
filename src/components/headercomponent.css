@@ -1,14 +1,12 @@
 .header-component-wrapper {
-  border: 1px red solid;
   width: 100%;
   display: flex;
-  /* flex-direction: column; */
   align-items: center;
   justify-content: center;
   gap: 2em;
+  margin-bottom: 1.5em;
 }
 .header-title {
-  /* border: 1px red solid; */
   width: 100%;
   max-width: 40em;
 }
@@ -24,7 +22,6 @@
   font-weight: 500;
 }
 .my-image-box {
-  /* border: 1px red solid; */
   width: 100%;
   max-width: 30em;
 }
@@ -36,6 +33,7 @@
   padding: 0.8em 1em;
   background-color: #f6b93a;
   color: black;
+  font-weight: bold;
   display: block;
   width: 100%;
   max-width: 12em;
@@ -45,6 +43,12 @@
   justify-content: center;
   border-radius: 10em;
   text-transform: capitalize;
+  transition: all 0.5s ease-in;
+}
+.resume:hover{
+  border: 1px #f6b93a solid;
+  background: transparent;
+  color: #fff;
 }
 
 @media screen and (max-width: 1000px) {
@@ -67,7 +71,6 @@
 @media screen and (max-width: 650px) {
   .header-component-wrapper {
     flex-direction: column-reverse;
-    margin-bottom: 1.5em;
   }
   .header-title {
     padding: 0 1em;

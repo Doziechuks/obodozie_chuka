@@ -5,7 +5,7 @@ const HomePage = () => {
   return ( 
     <div className="homePage-wrapper">
       <HeaderComponent />
-      {/* <ProjectSection /> */}
+      <ProjectSection />
     </div>
    );
 }

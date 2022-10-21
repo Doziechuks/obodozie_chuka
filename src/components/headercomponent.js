@@ -4,7 +4,7 @@ const HeaderComponent = () => {
   return (
     <div className="header-component-wrapper">
       <div className="header-title">
-        <h1>hi, i am obodozie chuka, a frontend developer.</h1>
+        <h1>hi, i am obodozie chuka,<br/> a frontend developer.</h1>
         <p>
           I use modern technology to create amazing, and user friendly digital
           products.
@@ -16,11 +16,6 @@ const HeaderComponent = () => {
       <div className="my-image-box">
         <img className="my-image" src="./images/chukacc.png" alt="chuka" />
       </div>
-
-      {/* <div className="header-wrapper">
-        
-        
-      </div> */}
     </div>
   );
 }
