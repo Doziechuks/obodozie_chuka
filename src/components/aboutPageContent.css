@@ -1,0 +1,31 @@
+.aboutPage-content-wrapper{
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.about-me{
+  width: 100%;
+  max-width: 45em;
+}
+.about-me h1{
+  text-transform: capitalize;
+  font-size: 2rem;
+  color: #fff;
+}
+.about-me p{
+  margin-bottom: 0.5em;
+  color: #fff;
+  font-size: 1.3rem;
+}
+
+@media screen and (max-width:1000px) {
+  .aboutPage-content-wrapper{
+  flex-direction: column-reverse;
+  align-items: center;
+  justify-content: center;
+}
+.about-me h1{
+  text-align: center;
+}
+}
