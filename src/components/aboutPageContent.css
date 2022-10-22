@@ -27,5 +27,24 @@
 }
 .about-me h1{
   text-align: center;
+  font-size: 1.6rem;
+  margin-bottom: 0.5em;
 }
+}
+
+@media screen and (max-width: 650px) {
+  .aboutPage-content-wrapper{
+    padding: 0 1em;
+  }
+  .about-image-box{
+    width: 100%;
+    max-width: 30em;
+    margin-bottom: 0.5em;
+  }
+  .about-image{
+    width: 100%;
+  }
+  .about-resume{
+    margin-bottom: 1em;
+  }
 }

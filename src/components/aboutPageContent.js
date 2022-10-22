@@ -23,7 +23,7 @@ const AboutPageContent = () => {
           quis praesentium itaque excepturi facilis aut corporis quibusdam
           quaerat blanditiis cum ex dignissimos, ad error, et iste beatae quod.
         </p>
-        <a className="resume" href="Obodozie_Chuka_myResume.pdf" target="blank">
+        <a className="resume about-resume" href="Obodozie_Chuka_myResume.pdf" target="blank">
           download resume
         </a>
       </div>
