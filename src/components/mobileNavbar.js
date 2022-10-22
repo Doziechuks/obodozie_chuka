@@ -2,6 +2,7 @@ import "./mobileNavbar.css";
 import { FaBars } from "react-icons/fa";
 import { BsArrowBarUp } from "react-icons/bs";
 import { Link } from "react-router-dom";
+import RotatingName from "./rotatingName";
 import { useState } from "react";
 
 const MobileNavbar = () => {
@@ -15,15 +16,7 @@ const MobileNavbar = () => {
     <div className="mobile-navbar-wrapper">
       <div className="mobile-nav-center">
         <div className="mobile-nav-header">
-          <div className="nav-circle">
-            <Link to="/" className="nav-text">
-              <p>
-                {text.split("").map((char, i) => (
-                  <h3 style={{ transform: `rotate(${i * 28}deg)` }}>{char}</h3>
-                ))}
-              </p>
-            </Link>
-          </div>
+          <RotatingName />
           <div className="handbugger-icon" onClick={toggleLink}>
             {showLink ? <BsArrowBarUp className="bar" /> : <FaBars className="bar" />}
           </div>

@@ -1,4 +1,5 @@
 import './navBar.css';
+import RotatingName from './rotatingName';
 import { Link, useLocation } from 'react-router-dom';
 import {
   AiFillLinkedin,
@@ -11,7 +12,7 @@ import { useState } from 'react';
 import { useEffect } from 'react';
 
 const NavBar = () => {
-  const text = 'ObodozieChuka';
+ 
   const { pathname } = useLocation();
   const [path, setPath] = useState('');
 
@@ -21,15 +22,7 @@ const NavBar = () => {
 
   return (
     <div className="navBar-wrapper">
-      <div className="nav-circle">
-        <Link to="/" className="nav-text">
-          <p>
-            {text.split("").map((char, i) => (
-              <h3 style={{ transform: `rotate(${i * 28}deg)` }}>{char}</h3>
-            ))}
-          </p>
-        </Link>
-      </div>
+      <RotatingName />
       <div className="other-links">
         <Link to="/">
           <div>home</div>
