@@ -46,9 +46,7 @@
   transition: all 0.5s ease-in;
 }
 .resume:hover{
-  border: 1px #f6b93a solid;
-  background: transparent;
-  color: #fff;
+  background: #f0a708;
 }
 
 @media screen and (max-width: 1000px) {
