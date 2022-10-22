@@ -1,0 +1,113 @@
+.contact-page-content-wrapper{
+  width: 100%;
+  min-height: 80vh;
+}
+.contact-section-title{
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 50em;
+  margin: 0 auto;
+  margin-bottom: 1em;
+}
+.contact-section-title h1{
+  text-transform: capitalize;
+  color: #fff;
+  margin-left: 0.1em;
+}
+.pic-box{
+  background-color: #f6b93a;
+  padding: 0.1em;
+  width: 4em;
+  height: 4em;
+  border-radius: 50%;
+  margin-left: auto;
+ 
+}
+.circle-image{
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+   /* animation: rotateImage 5s linear infinite; */
+}
+@keyframes rotateImage {
+  0%{
+    transform: rotate(0deg);
+  }
+  100%{
+    transform: rotate(360deg);
+  }
+}
+.form-box{
+  width: 100%;
+  max-width: 50em;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 2em;
+}
+.contact-form{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.input, .text-area{
+  outline: none;
+  border: 2px #cadafc solid;
+  padding: 0.5em;
+  background-color: transparent;
+  margin-bottom: 1em;
+  font-size: 1.3rem;
+  color: #cadafc;
+}
+.input::placeholder, .text-area::placeholder{
+  font-size: 1.3rem;
+  text-transform: capitalize;
+  font-family: "Poppins", sans-serif;
+  color: #cadafc;
+}
+.text-area{
+  min-height: 12em;
+}
+.contact-form-media{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1em;
+}
+.submit-btn{
+  display: block;
+  width: 100%;
+  max-width: 8em;
+  border: none;
+  outline: none;
+  padding: 0.8em 1em;
+  background-color: #f6b93a;
+  color: black;
+  font-size: 1.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.2em;
+  text-transform: capitalize;
+  cursor: pointer;
+  transition: all 0.5s ease-in;
+}
+.submit-btn:hover{
+  background: #f0a708;
+}
+
+@media screen and (max-width:1000px) {
+  .contact-page-content-wrapper{
+  padding: 0 1em;
+}
+.contact-section-title{
+  max-width: 100%;
+  margin: 0;
+  margin-bottom: 1em;
+}
+.contact-section-title h1{
+  font-size: 1.8rem;
+}
+}
