@@ -6,7 +6,6 @@ import RotatingName from "./rotatingName";
 import { useState } from "react";
 
 const MobileNavbar = () => {
-  const text = "ObodozieChuka";
   const [showLink, setShowLink] = useState(false);
 
   const toggleLink = () => {

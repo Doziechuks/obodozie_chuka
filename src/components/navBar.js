@@ -50,16 +50,16 @@ const NavBar = () => {
         </Link>
       </div>
       <div className="social-media">
-        <a href="#">
+        <a href="https://www.linkedin.com/in/chuka-obodozie/" target="blank">
           <AiFillLinkedin className="social-icon" />
         </a>
-        <a href="#">
+        <a href="https://github.com/Doziechuks" target="blank">
           <AiOutlineGithub className="social-icon" />
         </a>
-        <a href="#">
+        <a href="https://twitter.com/ObodozieChuka" target="blank">
           <AiFillTwitterCircle className="social-icon" />
         </a>
-        <a href="#">
+        <a href="https://web.facebook.com/chuka.obodozie" target='blank'>
           <FaWhatsappSquare className="social-icon" />
         </a>
       </div>

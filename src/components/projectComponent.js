@@ -1,5 +1,6 @@
 import ProjectCollection from './projectCollection';
 import projectData from './projectData';
+import { Link } from 'react-router-dom';
 import './projectComponent.css';
 
 const ProjectSection = () => {
@@ -16,6 +17,7 @@ const ProjectSection = () => {
             return <ProjectCollection key={project.id} project={project} />;
           })}
       </div>
+      <Link to='/projects' className='others'>see all projects</Link>
     </div>
   );
 }
