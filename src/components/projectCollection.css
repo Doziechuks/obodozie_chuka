@@ -44,15 +44,22 @@
 .project-collection-wrapper:hover .collection-content{
   transform: translateY(-100%);
 }
+.title-git-wrapper{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
 .collection-title{
   text-transform: capitalize;
-  text-align: center;
-
   width: 100%;
   max-width: 10em;
   font-size: 1.5rem;
-  margin: 0 auto;
   color: #fff;
+}
+.git-link{
+  font-size: 2rem;
+  color: #cadafc;
 }
 @media screen and (max-width: 650px) {
   .wrapp{

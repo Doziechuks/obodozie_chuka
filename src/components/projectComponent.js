@@ -7,7 +7,7 @@ const ProjectSection = () => {
     <div className="project-section-box">
       <div className="project-section-title">
         <div className="line" />
-        <h1>my projects</h1>
+        <h1>my recent projects</h1>
       </div>
       <div className="project-section-wrapper">
         {projectData

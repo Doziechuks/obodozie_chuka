@@ -1,5 +1,6 @@
 import './projectCollection.css';
 import { TbExternalLink } from "react-icons/tb";
+import { AiOutlineGithub } from "react-icons/ai";
 
 const ProjectCollection = ({ project }) => {
   const { title, imageUrl } = project;
@@ -14,11 +15,16 @@ const ProjectCollection = ({ project }) => {
             <div className="background" />
             <div className="collection-content">
               <p>visit</p>
-              <TbExternalLink className='projectLink' />
+              <TbExternalLink className="projectLink" />
             </div>
           </a>
         </div>
-        <h1 className="collection-title">{title}</h1>
+        <div className="title-git-wrapper">
+          <h1 className="collection-title">{title}</h1>
+          <a href="#" target='blank'>
+            <AiOutlineGithub className='git-link' />
+          </a>
+        </div>
       </a>
     </div>
   );
