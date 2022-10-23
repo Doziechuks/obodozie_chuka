@@ -59,7 +59,7 @@ const NavBar = () => {
         <a href="https://twitter.com/ObodozieChuka" target="blank">
           <AiFillTwitterCircle className="social-icon" />
         </a>
-        <a href="https://web.facebook.com/chuka.obodozie" target='blank'>
+        <a href="https://wa.me/message/6NJWVCNULGBTC1" target="blank">
           <FaWhatsappSquare className="social-icon" />
         </a>
       </div>
