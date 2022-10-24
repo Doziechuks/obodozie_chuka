@@ -7,7 +7,7 @@ const HeaderComponent = () => {
         <h1>hi, i am obodozie chuka,<br/> a frontend developer.</h1>
         <p>
           I use modern technology to create amazing, and user friendly digital
-          products.
+          products. I am well skilled in HTML5, CSS3, JavaScript, React.js.
         </p>
         <a className="resume" href="Obodozie_Chuka_myResume.pdf" target="blank">
           download resume
