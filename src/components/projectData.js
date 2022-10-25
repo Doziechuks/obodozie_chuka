@@ -1,7 +1,7 @@
 const projectData = [
   {
     title: "glamour-clothings",
-    imageUrl: "https://i.ibb.co/cvpntL1/hats.png",
+    imageUrl: "./images/glamour.png",
     id: 1,
     linkUrl: "shop/hats",
     gitLink: "https://github.com/Doziechuks/glamour-clothing-app",
@@ -9,7 +9,7 @@ const projectData = [
   },
   {
     title: "jinli spare parts",
-    imageUrl: "https://i.ibb.co/px2tCc3/jackets.png",
+    imageUrl: "./images/jinli.png",
     id: 2,
     linkUrl: "shop/jackets",
     gitLink: "https://github.com/Doziechuks/Jinli-portfolio",
@@ -17,7 +17,7 @@ const projectData = [
   },
   {
     title: "my portfolio",
-    imageUrl: "https://i.ibb.co/0jqHpnp/sneakers.png",
+    imageUrl: "./images/myportfolio.png",
     id: 3,
     linkUrl: "shop/sneakers",
     gitLink: "https://github.com/Doziechuks/obodozie_chuka",
@@ -25,7 +25,7 @@ const projectData = [
   },
   {
     title: "to do app",
-    imageUrl: "https://i.ibb.co/GCCdy8t/womens.png",
+    imageUrl: "./images/todoApp.png",
     size: "large",
     id: 4,
     linkUrl: "shop/womens",
@@ -34,7 +34,7 @@ const projectData = [
   },
   {
     title: "chat app illustrator",
-    imageUrl: "https://i.ibb.co/R70vBrQ/men.png",
+    imageUrl: "./images/appillustrator.png",
     size: "large",
     id: 5,
     linkUrl: "shop/mens",

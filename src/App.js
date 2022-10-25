@@ -17,6 +17,7 @@ function App() {
       setIsloading(true);
 
     }, 5000);
+    return () => clearInterval(timerId);
   }, [])
   return (
     <div className="general-wrapper">
