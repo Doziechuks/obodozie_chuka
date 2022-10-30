@@ -18,8 +18,8 @@ const AboutPageContent = () => {
         <p>
           I am very enthusiastic and meticulous about my job, and I give in my
           best and never give up on tasks and projects until fully executed to
-          clients taste and standard. I am also a passionate programme, and I
-          enjoy bringing ideas an solutions that help humanity. I always add
+          clients taste and standard. I am also a passionate programmer, and I
+          enjoy bringing ideas and solutions that help humanity. I always add
           value to any place or system I find myself in.
         </p>
         <p>

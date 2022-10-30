@@ -6,7 +6,6 @@ import {
   AiFillTwitterCircle,
   AiOutlineGithub,
 } from "react-icons/ai";
-
 import { FaWhatsappSquare } from "react-icons/fa";
 import { useState } from 'react';
 import { useEffect } from 'react';

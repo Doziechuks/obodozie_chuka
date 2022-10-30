@@ -66,6 +66,9 @@
   margin: 0 auto;
   margin-bottom: 1em;
 }
+.project-section-title h1{
+  font-size: 1.7rem;
+}
 .project-section-wrapper{
   flex-direction: column;
  
