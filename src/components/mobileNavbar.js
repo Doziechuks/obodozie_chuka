@@ -17,7 +17,11 @@ const MobileNavbar = () => {
         <div className="mobile-nav-header">
           <RotatingName />
           <div className="handbugger-icon" onClick={toggleLink}>
-            {showLink ? <BsArrowBarUp className="bar" /> : <FaBars className="bar" />}
+            {showLink ? (
+              <BsArrowBarUp className="bar" />
+            ) : (
+              <FaBars className="bar" />
+            )}
           </div>
         </div>
         {showLink && (
@@ -25,12 +29,15 @@ const MobileNavbar = () => {
             <Link to="/" onClick={toggleLink}>
               home
             </Link>
+            <hr className="mobile-rule" />
             <Link to="/about" onClick={toggleLink}>
               about me
             </Link>
+            <hr className="mobile-rule" />
             <Link to="/projects" onClick={toggleLink}>
               my projects
             </Link>
+            <hr className="mobile-rule" />
             <Link to="/contact" onClick={toggleLink}>
               contact me
             </Link>

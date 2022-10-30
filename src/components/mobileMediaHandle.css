@@ -11,6 +11,7 @@
     width: 100%;
     max-width: 15em;
     margin: 1em auto;
+    margin-top: 6em;
     display: flex;
     align-items: center;
     justify-content: space-between;
