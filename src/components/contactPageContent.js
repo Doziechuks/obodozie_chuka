@@ -7,15 +7,6 @@ const ContactPageContent = () => {
   const [title, setTitle] = useState("");
   const [message, setMessage] = useState("");
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    setEmail('');
-    setMessage('');
-    setName('');
-    setTitle('');
-    alert('Thank you for reaching out!!');
-  }
-
   const handleName = (e) => {
     setName(e.target.value);
   };
@@ -35,13 +26,18 @@ const ContactPageContent = () => {
         <div className="line" />
         <h1>contact me</h1>
         <div className="pic-box">
-          <img src="./images/circle.png" alt="" className='circle-image'/>
+          <img src="./images/circle.png" alt="" className="circle-image" />
         </div>
       </div>
       <div className="form-box">
-        <form className="contact-form" onSubmit={handleSubmit}>
+        <form
+          action="https://formspree.io/f/xeqnwkdj"
+          method="post"
+          className="contact-form"
+        >
           <input
             type="text"
+            name="name"
             value={name}
             onChange={handleName}
             required
@@ -50,6 +46,7 @@ const ContactPageContent = () => {
           />
           <input
             type="email"
+            name="email"
             value={email}
             onChange={handleEmail}
             required
@@ -58,6 +55,7 @@ const ContactPageContent = () => {
           />
           <input
             type="text"
+            name="title"
             value={title}
             onChange={handleTitle}
             required
@@ -66,6 +64,7 @@ const ContactPageContent = () => {
           />
           <textarea
             value={message}
+            name='message'
             onChange={handleMessage}
             required
             className="text-area"
