@@ -19,7 +19,6 @@
   font-size: 1.3rem;
 }
 .skill-box{
-  /* border: 1px red solid; */
   width: 100%;
   margin-top: 1.2em;
 }
@@ -30,7 +29,6 @@
   margin-bottom: 0.7em;
 }
 .list{
-  /* border: 1px red solid; */
   margin-left: 1em;
   display: flex;
   align-items: flex-start;
