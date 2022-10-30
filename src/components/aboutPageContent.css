@@ -18,6 +18,25 @@
   color: #fff;
   font-size: 1.3rem;
 }
+.skill-box{
+  border: 1px red solid;
+}
+.skill-box h3{
+  text-transform: capitalize;
+  font-size: 1.5rem;
+  color: #fff;
+}
+.list{
+  border: 1px red solid;
+  margin-left: 1em;
+  display: flex;
+  align-items: flex-start;
+  gap: 6em;
+}
+.list ul li{
+  color: #fff;
+  font-size: 1.3rem;
+}
 
 @media screen and (max-width:1000px) {
   .aboutPage-content-wrapper{
