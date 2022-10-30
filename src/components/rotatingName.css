@@ -27,5 +27,10 @@
   font-weight: bold;
   left: 50%;
   font-size: 0.8rem;
-  transform-origin: 0 3em;
+  transform-origin: 0 48px;
+}
+@media screen and (max-width:650px) {
+  .nav-text p h3 {
+  transform-origin: 0 36px;
+}
 }
