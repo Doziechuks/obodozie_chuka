@@ -32,11 +32,11 @@ const AboutPageContent = () => {
             <ul>
               <li>HTML</li>
               <li>CSS</li>
-              <li>JavaScript</li>
+              <li>Redux</li>
               <li>React</li>
             </ul>
             <ul>
-              <li>Redux</li>
+              <li>JavaScript</li>
               <li>Firebase</li>
               <li>Git/GitHub</li>
             </ul>

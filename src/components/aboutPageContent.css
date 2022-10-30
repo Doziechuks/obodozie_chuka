@@ -19,15 +19,18 @@
   font-size: 1.3rem;
 }
 .skill-box{
-  border: 1px red solid;
+  /* border: 1px red solid; */
+  width: 100%;
+  margin-top: 1.2em;
 }
 .skill-box h3{
   text-transform: capitalize;
   font-size: 1.5rem;
   color: #fff;
+  margin-bottom: 0.7em;
 }
 .list{
-  border: 1px red solid;
+  /* border: 1px red solid; */
   margin-left: 1em;
   display: flex;
   align-items: flex-start;
@@ -63,6 +66,15 @@
   .about-image{
     width: 100%;
   }
+  .skill-box h3{
+  font-size: 1.2rem;
+}
+.list{
+  gap: 0em;
+}
+.list ul:last-child{
+  margin-left: 5em;
+}
   .about-resume{
     margin-bottom: 1em;
   }
