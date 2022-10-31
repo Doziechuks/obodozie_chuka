@@ -139,7 +139,6 @@
 }
 @media screen and (max-width: 500px) {
   .success-message{
-    border: 1px red solid;
     padding: 0 5px;
   }
   .success-message h1{

@@ -9,7 +9,7 @@ const ContactPageContent = () => {
   const [email, setEmail] = useState("");
   const [title, setTitle] = useState("");
   const [message, setMessage] = useState("");
-  const [success, setSuccess] = useState(false);
+  const [success, setSuccess] = useState(true);
 
    const form = useRef();
    const serviceId = `${process.env.REACT_APP_EMAILJS_SERVICE_ID}`;
