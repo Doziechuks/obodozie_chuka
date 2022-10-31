@@ -6,11 +6,11 @@ const RotatingName = () => {
   return (
     <div className="nav-circle">
       <Link to="/" className="nav-text">
-        <p>
-          {text.split("").map((char, i) => (
-            <h3 style={{ transform: `rotate(${i * 28}deg)` }}>{char}</h3>
+        <div>
+          {text.split("").map((char, index) => (
+            <h3 key={index} style={{ transform: `rotate(${index * 28}deg)` }}>{char}</h3>
           ))}
-        </p>
+        </div>
       </Link>
     </div>
   );

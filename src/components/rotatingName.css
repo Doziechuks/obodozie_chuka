@@ -21,7 +21,7 @@
     transform: rotate(360deg);
   }
 }
-.nav-text p h3 {
+.nav-text div h3 {
   position: absolute;
   color: #f0a708;
   font-weight: bold;
@@ -30,7 +30,7 @@
   transform-origin: 0 48px;
 }
 @media screen and (max-width:650px) {
-  .nav-text p h3 {
+  .nav-text div h3 {
   transform-origin: 0 36px;
 }
 }

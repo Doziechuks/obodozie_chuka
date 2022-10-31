@@ -1,11 +1,40 @@
-import { useState } from 'react';
+import { useState, useRef } from 'react';
 import './contactPageContent.css';
+import emailjs from "@emailjs/browser";
 
 const ContactPageContent = () => {
   const [name, setName] = useState('');
   const [email, setEmail] = useState("");
   const [title, setTitle] = useState("");
   const [message, setMessage] = useState("");
+
+   const form = useRef();
+   const serviceId = `${process.env.REACT_APP_EMAILJS_SERVICE_ID}`;
+   const templateId = `${process.env.REACT_APP_EMAILJS_TEMPLATE_ID}`;
+   const publicKey = `${process.env.REACT_APP_EMAILJS_PUBLIC_KEY}`;
+
+    const sendEmail = (e) => {
+      e.preventDefault();
+      emailjs
+        .sendForm(
+          serviceId,
+          templateId,
+          form.current,
+          publicKey
+        )
+        .then(
+          (result) => {
+            console.log(result.text);
+          },
+          (error) => {
+            console.log(error.text);
+          }
+        );
+        setEmail('');
+        setMessage('');
+        setName('');
+        setTitle('');
+    };
 
   const handleName = (e) => {
     setName(e.target.value);
@@ -30,11 +59,7 @@ const ContactPageContent = () => {
         </div>
       </div>
       <div className="form-box">
-        <form
-          action="https://formspree.io/f/xeqnwkdj"
-          method="post"
-          className="contact-form"
-        >
+        <form ref={form} onSubmit={sendEmail} className="contact-form">
           <input
             type="text"
             name="name"
@@ -64,7 +89,7 @@ const ContactPageContent = () => {
           />
           <textarea
             value={message}
-            name='message'
+            name="message"
             onChange={handleMessage}
             required
             className="text-area"
