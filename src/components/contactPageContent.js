@@ -16,23 +16,18 @@ const ContactPageContent = () => {
    const templateId = `${process.env.REACT_APP_EMAILJS_TEMPLATE_ID}`;
    const publicKey = `${process.env.REACT_APP_EMAILJS_PUBLIC_KEY}`;
 
-    const sendEmail = (e) => {
+    const sendEmail = async (e) => {
       e.preventDefault();
-      emailjs
-        .sendForm(
+      try {
+        await  emailjs.sendForm(
           serviceId,
           templateId,
           form.current,
           publicKey
         )
-        .then(
-          (result) => {
-            console.log(result.text);
-          },
-          (error) => {
-            console.log(error.text);
-          }
-        );
+      } catch (error) {
+        console.log(error.text);
+      }
         setEmail('');
         setMessage('');
         setName('');
