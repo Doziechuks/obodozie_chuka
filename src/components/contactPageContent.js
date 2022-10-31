@@ -1,4 +1,6 @@
 import { useState, useRef } from 'react';
+import { FaThumbsUp } from "react-icons/fa";
+import { Link } from "react-router-dom";
 import './contactPageContent.css';
 import emailjs from "@emailjs/browser";
 
@@ -7,6 +9,7 @@ const ContactPageContent = () => {
   const [email, setEmail] = useState("");
   const [title, setTitle] = useState("");
   const [message, setMessage] = useState("");
+  const [success, setSuccess] = useState(true);
 
    const form = useRef();
    const serviceId = `${process.env.REACT_APP_EMAILJS_SERVICE_ID}`;
@@ -34,6 +37,7 @@ const ContactPageContent = () => {
         setMessage('');
         setName('');
         setTitle('');
+        setSuccess(false);
     };
 
   const handleName = (e) => {
@@ -50,56 +54,68 @@ const ContactPageContent = () => {
   };
 
   return (
-    <div className="contact-page-content-wrapper">
-      <div className="contact-section-title ">
-        <div className="line" />
-        <h1>contact me</h1>
-        <div className="pic-box">
-          <img src="./images/circle.png" alt="" className="circle-image" />
+    <div className="contact-main-wrapper">
+      {success ? (
+        <div className="contact-page-content-wrapper">
+          <div className="contact-section-title ">
+            <div className="line" />
+            <h1>contact me</h1>
+            <div className="pic-box">
+              <img src="./images/circle.png" alt="" className="circle-image" />
+            </div>
+          </div>
+          <div className="form-box">
+            <form ref={form} onSubmit={sendEmail} className="contact-form">
+              <input
+                type="text"
+                name="name"
+                value={name}
+                onChange={handleName}
+                required
+                placeholder="Name"
+                className="input"
+              />
+              <input
+                type="email"
+                name="email"
+                value={email}
+                onChange={handleEmail}
+                required
+                placeholder="Email"
+                className="input"
+              />
+              <input
+                type="text"
+                name="title"
+                value={title}
+                onChange={handleTitle}
+                required
+                placeholder="Title"
+                className="input"
+              />
+              <textarea
+                value={message}
+                name="message"
+                onChange={handleMessage}
+                required
+                className="text-area"
+                placeholder="message"
+              />
+              <button type="submit" className="submit-btn">
+                submit
+              </button>
+            </form>
+          </div>
         </div>
-      </div>
-      <div className="form-box">
-        <form ref={form} onSubmit={sendEmail} className="contact-form">
-          <input
-            type="text"
-            name="name"
-            value={name}
-            onChange={handleName}
-            required
-            placeholder="Name"
-            className="input"
-          />
-          <input
-            type="email"
-            name="email"
-            value={email}
-            onChange={handleEmail}
-            required
-            placeholder="Email"
-            className="input"
-          />
-          <input
-            type="text"
-            name="title"
-            value={title}
-            onChange={handleTitle}
-            required
-            placeholder="Title"
-            className="input"
-          />
-          <textarea
-            value={message}
-            name="message"
-            onChange={handleMessage}
-            required
-            className="text-area"
-            placeholder="message"
-          />
-          <button type="submit" className="submit-btn">
-            submit
-          </button>
-        </form>
-      </div>
+      ) : (
+        <div className="success-box">
+          <div className="success-message">
+            <FaThumbsUp className="thumbsUp" />
+            <h1>thank you for reaching us!!</h1>
+          </div>
+          <Link to="/">back to home</Link>
+        </div>
+      )}
     </div>
   );
 }
