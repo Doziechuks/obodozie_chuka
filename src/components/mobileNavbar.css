@@ -18,9 +18,21 @@
     align-items: center;
     justify-content: space-between;
   }
+  .handbugger-icon{
+    width: 3em;
+    height: 3em;
+    text-align: center;
+    position: relative;
+  }
   .bar{
     color: #cadafc;
     font-size: 2rem;
+    transition: all 0.5s ease-in-out;
+    position: absolute;
+    right: 8px;
+  }
+  .remove-icon{
+    opacity: 0;
   }
   .mobile-link-container{
     background-color: #3d959f;
@@ -30,14 +42,13 @@
     justify-content: center;
     height: 0;
     overflow: hidden;
-    transition: height 1s ease-in-out;
+    transition: all 0.5s ease-in-out;
     position: absolute;
     left: 0;
     right: 0;
   }
   .show-link{
     height: 18em;
-    transition: all 1s ease-in-out;
   }
   .mobile-link-container a{
     color: white;
