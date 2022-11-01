@@ -1,6 +1,5 @@
 import "./mobileNavbar.css";
-import { FaBars } from "react-icons/fa";
-import { BsArrowBarUp } from "react-icons/bs";
+import { FaBars, FaTimes } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import RotatingName from "./rotatingName";
 import { useState } from "react";
@@ -17,7 +16,7 @@ const MobileNavbar = () => {
         <div className="mobile-nav-header">
           <RotatingName />
           <div className="handbugger-icon" onClick={toggleLink}>
-            <BsArrowBarUp className={`bar ${!showLink && "remove-icon"}`} />
+            <FaTimes className={`bar ${!showLink && "remove-icon"}`} />
 
             <FaBars className={`bar ${showLink && "remove-icon"}`} />
           </div>
