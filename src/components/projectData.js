@@ -1,11 +1,20 @@
 const projectData = [
   {
-    title: "glamour-clothings",
+    title: "e-commerce app",
     imageUrl: "./images/glamour.png",
     id: 1,
     linkUrl: "shop/hats",
     gitLink: "https://github.com/Doziechuks/glamour-clothing-app",
     liveUrl: "https://glamour-clothing-app.vercel.app/",
+  },
+  {
+    title: "todo app",
+    imageUrl: "./images/todo.png",
+    size: "large",
+    id: 4,
+    linkUrl: "shop/womens",
+    gitLink: 'https://github.com/Doziechuks/react-to-do-app',
+    liveUrl: "https://mytodoapp-livid.vercel.app/",
   },
   {
     title: "jinli spare parts",
@@ -22,15 +31,6 @@ const projectData = [
     linkUrl: "shop/sneakers",
     gitLink: "https://github.com/Doziechuks/obodozie_chuka",
     liveUrl: "https://glamour-clothing-app.vercel.app/",
-  },
-  {
-    title: "todo app",
-    imageUrl: "./images/todo.png",
-    size: "large",
-    id: 4,
-    linkUrl: "shop/womens",
-    gitLink: 'https://github.com/Doziechuks/react-to-do-app',
-    liveUrl: "https://mytodoapp-livid.vercel.app/",
   },
   {
     title: "chat app illustrator",
