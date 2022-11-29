@@ -24,13 +24,13 @@ const projectData = [
     liveUrl: "https://glamour-clothing-app.vercel.app/",
   },
   {
-    title: "to do app",
-    imageUrl: "./images/todoApp.png",
+    title: "todo app",
+    imageUrl: "./images/todo.png",
     size: "large",
     id: 4,
     linkUrl: "shop/womens",
-    gitLink: "https://github.com/Doziechuks/mydaily_to-do_list",
-    liveUrl: "https://mydaily-to-do-list.vercel.app/",
+    gitLink: 'https://github.com/Doziechuks/react-to-do-app',
+    liveUrl: "https://mytodoapp-livid.vercel.app/",
   },
   {
     title: "chat app illustrator",
