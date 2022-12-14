@@ -13,8 +13,17 @@ const projectData = [
     size: "large",
     id: 4,
     linkUrl: "shop/womens",
-    gitLink: 'https://github.com/Doziechuks/react-to-do-app',
+    gitLink: "https://github.com/Doziechuks/react-to-do-app",
     liveUrl: "https://mytodoapp-livid.vercel.app/",
+  },
+  {
+    title: "quiz app",
+    imageUrl: "./images/quizapp.png",
+    size: "large",
+    id: 5,
+    linkUrl: "shop/mens",
+    gitLink: "https://github.com/Doziechuks/quizApp",
+    liveUrl: "https://skilltest-eight.vercel.app/",
   },
   {
     title: "jinli spare parts",
