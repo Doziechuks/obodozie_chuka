@@ -13,7 +13,7 @@ const HeaderComponent = () => {
           always passionate about, and software engineering has given me a good
           opportunity to maximize my potentials in those areas.
         </p>
-        <a className="resume" href="chuka.pdf" target="blank">
+        <a className="resume" href="chuka obodozie.pdf" target="blank">
           download resume
         </a>
       </div>

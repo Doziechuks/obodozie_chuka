@@ -44,7 +44,7 @@ const AboutPageContent = () => {
         </div>
         <a
           className="resume about-resume"
-          href="chuka.pdf"
+          href="chuka obodozie.pdf"
           target="blank"
         >
           download resume
